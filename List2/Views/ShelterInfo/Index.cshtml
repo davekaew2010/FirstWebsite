@@ -1,0 +1,29 @@
+﻿@model List2.Models.shelters
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<ul>
+    List of Dogs
+    @foreach (var d in Model.Dogs)
+    {
+        <li>@d.name</li> <li>@d.breed</li> <li>@d.age</li> <li>@d.size</li> <li>@d.dogID</li>
+    }
+</ul>
+<ul>
+    List of Cats
+    @foreach (var c in Model.Cats)
+    {
+        <li>@c.name</li>
+        <li>@c.breed</li>
+        <li>@c.age</li>
+        <li>@c.size</li>
+        <li>@c.catID</li>
+    }
+
+
+
+</ul>
+
